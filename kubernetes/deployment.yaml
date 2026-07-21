@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devopsx-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devopsx-app
+  template:
+    metadata:
+      labels:
+        app: devopsx-app
+    spec:
+      containers:
+      - name: devopsx-app
+        image: soumyadiptaghosh4328/devopsx-app:3
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000
