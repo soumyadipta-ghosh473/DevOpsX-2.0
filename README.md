@@ -1,16 +1,16 @@
-# 🚀 DevOpsX 2.0
+#  DevOpsX 2.0
 
 A production-inspired end-to-end DevOps project demonstrating Continuous Integration, Continuous Deployment (CI/CD), containerization, infrastructure automation, Kubernetes orchestration, and application monitoring on AWS.
 
 ---
 
-# 📌 Overview
+#  Overview
 
 DevOpsX 2.0 implements a complete DevOps workflow using modern cloud-native tools. The project automates application build, deployment, monitoring, and infrastructure provisioning.
 
 ---
 
-# ✨ Features
+#  Features
 
 - Flask Task Manager Application
 - REST API with Health & Metrics Endpoints
@@ -44,7 +44,7 @@ DevOpsX 2.0 implements a complete DevOps workflow using modern cloud-native tool
 
 ---
 
-# 🏗 Architecture
+#  Architecture
 
 ```
 Developer
@@ -121,7 +121,7 @@ DevOpsX-2.0
 
 ---
 
-# 📊 Monitoring
+#  Monitoring
 
 The application exposes Prometheus metrics through:
 
@@ -150,7 +150,7 @@ Prometheus scrapes application metrics and Grafana provides dashboards for visua
 
 ---
 
-# 📷 Screenshots
+#  Screenshots
 
 Add screenshots of:
 
@@ -165,7 +165,7 @@ Add screenshots of:
 
 ---
 
-# 👨‍💻 Author
+#  Author
 
 **Soumyadipta Ghosh**
 
