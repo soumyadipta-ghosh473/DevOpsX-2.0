@@ -1,105 +1,174 @@
-# DevOpsX-2.0
+# 🚀 DevOpsX 2.0
 
-## Overview
-
-DevOpsX 2.0 is a production-inspired DevOps project implementing a complete CI/CD pipeline using GitHub, Jenkins, Docker, Kubernetes, Terraform, Prometheus and Grafana.
+A production-inspired end-to-end DevOps project demonstrating Continuous Integration, Continuous Deployment (CI/CD), containerization, infrastructure automation, Kubernetes orchestration, and application monitoring on AWS.
 
 ---
 
-## Features
+# 📌 Overview
+
+DevOpsX 2.0 implements a complete DevOps workflow using modern cloud-native tools. The project automates application build, deployment, monitoring, and infrastructure provisioning.
+
+---
+
+# ✨ Features
 
 - Flask Task Manager Application
-- GitHub Source Control
-- Jenkins CI/CD Pipeline
+- REST API with Health & Metrics Endpoints
+- Git Version Control using GitHub
+- Automated CI/CD Pipeline using Jenkins
 - Docker Containerization
-- Kubernetes Deployment
-- Infrastructure as Code using Terraform
-- Monitoring using Prometheus
-- Dashboard using Grafana
+- Docker Hub Image Registry
+- Kubernetes Deployment using Minikube
+- Infrastructure Provisioning using Terraform
+- Application Monitoring using Prometheus
+- Visualization using Grafana
+- AWS EC2 Deployment
 
 ---
 
-## Tech Stack
+# 🛠 Tech Stack
 
-- Python Flask
-- SQLite
-- GitHub
-- Jenkins
-- Docker
-- Kubernetes (Minikube)
-- Terraform
-- Prometheus
-- Grafana
-- AWS EC2 Ubuntu
+| Category | Technology |
+|----------|------------|
+| Backend | Python Flask |
+| Database | SQLite |
+| Version Control | Git & GitHub |
+| CI/CD | Jenkins |
+| Containerization | Docker |
+| Container Registry | Docker Hub |
+| Orchestration | Kubernetes (Minikube) |
+| Infrastructure as Code | Terraform |
+| Monitoring | Prometheus |
+| Dashboard | Grafana |
+| Cloud Platform | AWS EC2 (Ubuntu) |
 
 ---
 
-## Architecture
+# 🏗 Architecture
 
+```
 Developer
-
-↓
-
-GitHub
-
-↓
-
-Jenkins
-
-↓
-
+    │
+    ▼
+GitHub Repository
+    │
+    ▼
+Jenkins CI/CD
+    │
+    ▼
 Docker Build
-
-↓
-
+    │
+    ▼
 Docker Hub
-
-↓
-
-Kubernetes
-
-↓
-
-Prometheus
-
-↓
-
-Grafana
+    │
+    ▼
+Kubernetes (Minikube)
+    │
+    ├──────────────┐
+    ▼              ▼
+Flask App     Prometheus
+                  │
+                  ▼
+              Grafana
+```
 
 ---
 
-## Project Structure
+# 📂 Project Structure
 
 ```
 DevOpsX-2.0
 │
-├── app
-├── kubernetes
-├── monitoring
-├── terraform
-├── Jenkinsfile
+├── app/
+│   ├── templates/
+│   ├── static/
+│   ├── app.py
+│   └── models.py
+│
+├── kubernetes/
+│   ├── deployment.yaml
+│   └── service.yaml
+│
+├── monitoring/
+│   └── k8s/
+│       ├── prometheus-config.yaml
+│       ├── prometheus.yaml
+│       └── grafana.yaml
+│
+├── terraform/
+│   ├── main.tf
+│   ├── provider.tf
+│   ├── variables.tf
+│   └── outputs.tf
+│
 ├── Dockerfile
-└── README.md
+├── Jenkinsfile
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
-## CI/CD Pipeline
+# ⚙ CI/CD Workflow
 
-1. Push code to GitHub
-
-2. Jenkins detects changes
-
-3. Build Docker image
-
-4. Push image to Docker Hub
-
-5. Deploy to Kubernetes
-
-6. Monitor using Prometheus & Grafana
+1. Developer pushes code to GitHub
+2. Jenkins detects repository changes
+3. Docker image is built
+4. Image is pushed to Docker Hub
+5. Kubernetes deploys the latest image
+6. Prometheus collects application metrics
+7. Grafana visualizes monitoring data
 
 ---
 
-## Author
+# 📊 Monitoring
 
-Soumyadipta Ghosh
+The application exposes Prometheus metrics through:
+
+```
+/metrics
+```
+
+Health endpoint:
+
+```
+/health
+```
+
+Prometheus scrapes application metrics and Grafana provides dashboards for visualization.
+
+---
+
+# 🚀 Deployment Components
+
+- AWS EC2 Ubuntu Server
+- Jenkins
+- Docker
+- Kubernetes (Minikube)
+- Prometheus
+- Grafana
+
+---
+
+# 📷 Screenshots
+
+Add screenshots of:
+
+- Jenkins Successful Pipeline
+- Docker Hub Repository
+- Kubernetes Pods
+- Kubernetes Services
+- Prometheus Targets
+- Grafana Dashboard
+- Terraform Apply Output
+- Flask Application
+
+---
+
+# 👨‍💻 Author
+
+**Soumyadipta Ghosh**
+
+B.Tech Computer Science Engineering
+
+Cloud & DevOps Enthusiast
